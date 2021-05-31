@@ -1,0 +1,8 @@
+{
+  "name": "types-doodler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:enbermudez/types-doodler.git",
+  "author": "Enrique Bermúdez <enrique.bermudez@mercadolibre.com>",
+  "license": "MIT"
+}
