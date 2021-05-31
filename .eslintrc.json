@@ -1,7 +1,8 @@
 {
   "env": {
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "extends": [
     "standard",
@@ -15,5 +16,5 @@
     "semi": ["error", "always"],
     "quotes": ["error", "single"]
   },
-  "plugins": ["prettier"]
+  "plugins": ["prettier", "jest"]
 }
