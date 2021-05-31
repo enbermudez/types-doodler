@@ -1,4 +1,4 @@
-# [Types Doodler](https://enbermudez.github.io/types-doodler/) &middot; [![enbermudez](https://circleci.com/github/enbermudez/types-doodler.svg?style=svg)](https://app.circleci.com/pipelines/github/enbermudez/types-doodler)
+# [Types Doodler](https://enbermudez.github.io/types-doodler/) &middot; [![enbermudez](https://circleci.com/gh/enbermudez/types-doodler.svg?style=shield)](https://app.circleci.com/pipelines/github/enbermudez/types-doodler)
 
 Utility library filled with non-common (and some random) helpers.
 
