@@ -16,7 +16,6 @@ module.exports = {
         {
           type: 'doc',
           docId: 'getting-started',
-          editUrl: 'https://github.com/enbermudez/types-doodler/edit/master/docusaurus/website',
           position: 'right',
           label: 'Docs',
         },
