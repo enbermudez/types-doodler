@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Types Doodler',
   tagline: 'Utility library filled with non-common (and some random) helpers.',
-  url: 'https://enbermudez.github.io',
+  url: 'https://enbermudez.github.io/types-doodler',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
