@@ -2,8 +2,8 @@
 module.exports = {
   title: 'Types Doodler',
   tagline: 'Utility library filled with non-common (and some random) helpers.',
-  url: 'https://enbermudez.github.io/types-doodler',
-  baseUrl: '/',
+  url: 'https://enbermudez.github.io/',
+  baseUrl: '/types-doodler/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -16,6 +16,7 @@ module.exports = {
         {
           type: 'doc',
           docId: 'getting-started',
+          editUrl: 'https://github.com/enbermudez/types-doodler/edit/master/docusaurus/website',
           position: 'right',
           label: 'Docs',
         },
@@ -42,12 +43,6 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/enbermudez/types-doodler',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/enbermudez/types-doodler/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
