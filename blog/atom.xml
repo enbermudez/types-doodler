@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://enbermudez.github.io/blog</id>
+    <id>https://enbermudez.github.io/types-doodler/blog</id>
     <title>Types Doodler Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://enbermudez.github.io/blog"/>
+    <link rel="alternate" href="https://enbermudez.github.io/types-doodler/blog"/>
     <subtitle>Types Doodler Blog</subtitle>
-    <icon>https://enbermudez.github.io/img/favicon.ico</icon>
+    <icon>https://enbermudez.github.io/types-doodler/img/favicon.ico</icon>
 </feed>
