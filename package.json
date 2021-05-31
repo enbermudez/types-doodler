@@ -5,11 +5,14 @@
   "repository": "git@github.com:enbermudez/types-doodler.git",
   "author": "Enrique Bermúdez <enrique.bermudez@mercadolibre.com>",
   "license": "MIT",
+  "engines": {
+    "node": "14.x || 15.x || 16.x"
+  },
   "scripts": {
     "build": "babel src --out-dir dist",
     "dev": "nodemon --exec babel-node src/index.js",
     "lint": "eslint src/",
-    "test": "jest --coverage",
+    "test": "jest --ci --coverage && codecov",
     "clean": "rimraf node_modules/ yarn.lock"
   },
   "dependencies": {},
@@ -20,6 +23,7 @@
     "@babel/preset-env": "^7.14.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^27.0.2",
+    "codecov": "^3.8.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
