@@ -1,4 +1,4 @@
-import { weirdCase } from '../../src/strings';
+import weirdCase from '../../src/strings/weird-case';
 
 describe('Weird Case', () => {
   it('Should throw an error if no string is provided', () => {

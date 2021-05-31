@@ -1,5 +1,5 @@
 import weirdCase from './weird-case';
 
-export {
+export default {
   weirdCase
 };
