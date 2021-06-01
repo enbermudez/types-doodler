@@ -1,5 +1,5 @@
 import stringsUtils from './strings';
 
-export default {
+module.exports = {
   strings: stringsUtils
 };
