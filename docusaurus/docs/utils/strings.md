@@ -13,7 +13,16 @@ Transform the supplied string to weird-casing.
 ```js
 const td = require('types-doodler');
 
-const weird = td.strings.weirdCase('this is so weird');
+const options = { str: 'this-is-so-weird', separator: '-' };
 
-console.log(weird); // ThIs Is So WeIrD
+const weird = td.strings.weirdCase(options);
+
+console.log(weird); // ThIs-Is-So-WeIrD
 ```
+
+### Options
+
+| Property      | Description                                  | Type       | Default | Required           |
+| ------------- | -------------------------------------------- | ---------- | ------- | :----------------: |
+| `str`         | String to be edited.                         | `string`   |         | :heavy_check_mark: |
+| `separator`   | Character used as a separator in the string. | `string`   | ` `     |                    |
