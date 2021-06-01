@@ -11,10 +11,10 @@ Once it is done, you can modify any existing util or create a new one.
 
 ## Developing a new util
 
-- Create a new branch from `develop` with the pattern: `feature/util-name`
+- Create a new branch from `master` with the pattern: `feature/util-name`
 - Add the utils code: `src/type/util-name.js`
 - Add the utils test: `tests/type/util-name.test.js`
-- Create a new pull request from `fork/branch` to `types-doodler/develop`
+- Create a new pull request from `fork/branch` to `types-doodler/master`
 
 ## Testing
 
