@@ -2,11 +2,11 @@ import weirdCase from '../../src/strings/weird-case';
 
 describe('Weird Case', () => {
   it('Should throw an error if no string is provided', () => {
-    expect(() => weirdCase(false)).toThrow('No string provided');
+    expect(() => weirdCase(false)).toThrow('ValidationError: "str" must be a string');
   });
 
   it('Should return the same value if 0 length string is provided', () => {
-    expect(weirdCase('')).toEqual('');
+    expect(() => weirdCase()).toThrow('ValidationError: "str" is required');
   });
 
   it('Should return a weird-cased string - no separator provided', () => {
@@ -18,6 +18,6 @@ describe('Weird Case', () => {
   });
 
   it('Should throw an error if the provided separator is not a string', () => {
-    expect(() => weirdCase('This-is-so-weird', false)).toThrow('The separator must be a string.');
+    expect(() => weirdCase('This-is-so-weird', false)).toThrow('ValidationError: "separator" must be a string');
   });
 });
