@@ -20,3 +20,9 @@ tests
 
 # Website
 docusaurus
+
+# Config files
+.babelrc
+.editorconfig
+.eslintrc.json
+.prettierrc
