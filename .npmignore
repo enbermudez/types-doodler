@@ -8,3 +8,15 @@ yarn-error.log*
 # Coverage
 coverage
 *.lcov
+
+# Source
+src
+
+# Tests
+tests
+
+# CircleCI
+.circleci
+
+# Website
+docusaurus
