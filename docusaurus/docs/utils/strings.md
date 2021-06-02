@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## palindrome
 
-Checks wheter the provided string is a palindrome or not.
+Checks whether the provided string is a palindrome or not.
 
 ```js
 const td = require('types-doodler');
