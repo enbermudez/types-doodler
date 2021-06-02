@@ -1,6 +1,6 @@
 import weirdCase from '../../src/strings/weird-case';
 
-describe('Weird Case', () => {
+describe('String - Weird Case', () => {
   it('Should throw an error if no string is provided', () => {
     expect(() => weirdCase({ str: false })).toThrow('ValidationError: "str" must be a string');
   });
