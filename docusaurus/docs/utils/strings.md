@@ -4,6 +4,26 @@ sidebar_position: 2
 
 # Strings
 
+## palindrome
+
+Checks wheter the provided string is a palindrome or not.
+
+```js
+const td = require('types-doodler');
+
+const options = { str: 'madam' };
+
+const palindrome = td.strings.palindrome(options);
+
+console.log(palindrome); // true
+```
+
+| Property      | Description                                               | Type      | Default | Required           |
+| ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
+| `str`         | String to be checked.                                     | `string`  |         | :heavy_check_mark: |
+
+---
+
 ## reverse
 
 Reverse the provided string as a whole or word by word.
