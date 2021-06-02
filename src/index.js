@@ -1,5 +1,7 @@
-import stringsUtils from './strings';
+import arrays from './arrays';
+import strings from './strings';
 
 module.exports = {
-  strings: stringsUtils
+  arrays,
+  strings
 };
