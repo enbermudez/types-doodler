@@ -2,7 +2,10 @@
   "name": "types-doodler",
   "version": "0.0.3-rc-3-alpha",
   "main": "dist/index.js",
-  "repository": "git@github.com:enbermudez/types-doodler.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enbermudez/types-doodler.git"
+  },
   "author": "Enrique Bermúdez <enrique.bermudez@mercadolibre.com>",
   "license": "MIT",
   "engines": {
