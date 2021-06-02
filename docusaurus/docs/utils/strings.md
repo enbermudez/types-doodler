@@ -4,6 +4,27 @@ sidebar_position: 3
 
 # Strings
 
+## charmap
+
+Returns a charmp (object) of the provided string.
+
+```js
+const td = require('types-doodler');
+
+const options = { str: 'abbccc' };
+
+const charmap = td.strings.charmap(options);
+
+console.log(charmap); // { a: 1, b: 2, c: 3 }
+```
+
+| Property      | Description                                               | Type      | Default | Required           |
+| ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
+| `str`         | String to be checked.                                     | `string`  |         | :heavy_check_mark: |
+| `insensitive` | Whether it should worry about casing or not.              | `boolean` | `false` |                    |
+
+---
+
 ## palindrome
 
 Checks whether the provided string is a palindrome or not.
