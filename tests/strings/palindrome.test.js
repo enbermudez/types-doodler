@@ -5,7 +5,7 @@ describe('String - Weird Case', () => {
     expect(() => palindrome({ str: false })).toThrow('ValidationError: "str" must be a string');
   });
 
-  it('Should theow an error if no "str" is provided', () => {
+  it('Should throw an error if no "str" is provided', () => {
     expect(() => palindrome({})).toThrow('ValidationError: "str" is required');
   });
 
