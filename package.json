@@ -13,7 +13,6 @@
   },
   "scripts": {
     "build": "rimraf dist/ && babel src --out-dir dist",
-    "dev": "nodemon --exec babel-node src/index.js",
     "lint": "eslint src/ tests/",
     "test": "jest --ci --coverage && codecov",
     "clean": "rimraf node_modules/ yarn.lock"
