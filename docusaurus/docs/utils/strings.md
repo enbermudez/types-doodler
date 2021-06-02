@@ -4,9 +4,31 @@ sidebar_position: 3
 
 # Strings
 
+## anagram
+
+Check if a string is an anagram of another string.
+
+```js
+const td = require('types-doodler');
+
+const options = { str: 'abbccc' };
+
+const anagram = td.strings.anagram({ str1: 'listen', str2: 'silent' });
+
+console.log(anagram); // true
+```
+
+| Property      | Description                                               | Type      | Default | Required           |
+| ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
+| `str1`        | Target string 1.                                          | `string`  |         | :heavy_check_mark: |
+| `str2`        | Target string 2.                                          | `string`  |         | :heavy_check_mark: |
+| `insensitive` | Whether it should worry about casing or not.              | `boolean` | `false` |                    |
+
+---
+
 ## charmap
 
-Returns a charmp (object) of the provided string.
+Returns a charmap (object) of the provided string.
 
 ```js
 const td = require('types-doodler');
