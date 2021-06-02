@@ -1,6 +1,6 @@
 import palindrome from '../../src/numbers/palindrome';
 
-describe('String - Weird Case', () => {
+describe('Number - Palindrome', () => {
   it('Should throw an error if the "num" provided is not a number', () => {
     expect(() => palindrome({ num: false })).toThrow('ValidationError: "num" must be a number');
   });

@@ -1,6 +1,6 @@
 import prime from '../../src/numbers/prime';
 
-describe('String - Weird Case', () => {
+describe('Number -Prime', () => {
   it('Should throw an error if the "num" provided is not a number', () => {
     expect(() => prime({ num: false })).toThrow('ValidationError: "num" must be a number');
   });
