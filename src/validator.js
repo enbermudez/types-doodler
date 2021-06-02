@@ -1,5 +1,5 @@
-export default (schema, obj) => {
-  const { error, value } = schema.validate(obj);
+export default (schema, obj, convert = false) => {
+  const { error, value } = schema.validate(obj, { convert });
 
   if (error) throw new Error(error);
 
