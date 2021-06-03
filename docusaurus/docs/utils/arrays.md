@@ -22,7 +22,7 @@ console.log(equals); // true
 | ------------- | -------------------------------------------- | ---------- | ------- | :----------------: |
 | `array1`      | First array.                                 | `array`    |         | :heavy_check_mark: |
 | `array2`      | Second array.                                | `array`    |         | :heavy_check_mark: |
-| `ordered`     | Sorts both arrays before comparision.        | `boolean`  | `false` |                    |
+| `ordered`     | Sorts both arrays before comparison.         | `boolean`  | `false` |                    |
 
 ---
 
