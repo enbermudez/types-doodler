@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Getting Started
 
-Types Doodler is an utility library filled with non-common (and some random) helpers.
+Types Doodler is an utility library filled with non-common (and some random) utils for data manipulation.
 
 ## Installation
 
