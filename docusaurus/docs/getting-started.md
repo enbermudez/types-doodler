@@ -35,7 +35,7 @@ import td from 'types-doodler';
 Start using the provided utils:
 
 ```js
-const random = types.arrays.random({ arr: [1, 2, 3, 4, 5] qty: 2 });
+const random = types.arrays.random({ array: [1, 2, 3, 4, 5] quantity: 2 });
 
 console.log(random);
 
