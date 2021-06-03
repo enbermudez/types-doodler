@@ -1,12 +1,55 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Strings
 
+## anagram
+
+Check if a string is an anagram of another string.
+
+```js
+const td = require('types-doodler');
+
+const options = { str: 'abbccc' };
+
+const anagram = td.strings.anagram({ str1: 'listen', str2: 'silent' });
+
+console.log(anagram); // true
+```
+
+| Property      | Description                                               | Type      | Default | Required           |
+| ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
+| `str1`        | Target string 1.                                          | `string`  |         | :heavy_check_mark: |
+| `str2`        | Target string 2.                                          | `string`  |         | :heavy_check_mark: |
+| `insensitive` | Whether it should worry about casing or not.              | `boolean` | `false` |                    |
+
+---
+
+## charmap
+
+Returns a charmap (object) of the provided string.
+
+```js
+const td = require('types-doodler');
+
+const options = { str: 'abbccc' };
+
+const charmap = td.strings.charmap(options);
+
+console.log(charmap); // { a: 1, b: 2, c: 3 }
+```
+
+| Property      | Description                                               | Type      | Default | Required           |
+| ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
+| `str`         | String to be checked.                                     | `string`  |         | :heavy_check_mark: |
+| `insensitive` | Whether it should worry about casing or not.              | `boolean` | `false` |                    |
+
+---
+
 ## palindrome
 
-Checks wheter the provided string is a palindrome or not.
+Checks whether the provided string is a palindrome or not.
 
 ```js
 const td = require('types-doodler');

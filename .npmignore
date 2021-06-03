@@ -26,3 +26,6 @@ docusaurus
 .editorconfig
 .eslintrc.json
 .prettierrc
+
+# md
+CONTRIBUTING.md

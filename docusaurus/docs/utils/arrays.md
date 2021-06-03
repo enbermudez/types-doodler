@@ -8,8 +8,6 @@ sidebar_position: 1
 
 Get one or more random elements from a provided array. Those returned elements could be repeated.
 
-### Usage
-
 ```js
 const td = require('types-doodler');
 
@@ -19,8 +17,6 @@ const randoms = td.arrays.random(options);
 
 console.log(randoms); // [1, 1, 4]
 ```
-
-### Options
 
 | Property      | Description                                  | Type       | Default | Required           |
 | ------------- | -------------------------------------------- | ---------- | ------- | :----------------: |
