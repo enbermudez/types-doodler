@@ -13,9 +13,9 @@
   },
   "scripts": {
     "build": "rimraf dist/ && babel src --out-dir dist",
+    "clean": "rimraf node_modules/ yarn.lock",
     "lint": "eslint src/ tests/",
-    "test": "jest --ci --coverage && codecov",
-    "clean": "rimraf node_modules/ yarn.lock"
+    "test": "jest --ci --coverage && codecov"
   },
   "dependencies": {
     "joi": "^17.4.0"
