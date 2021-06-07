@@ -1,6 +1,6 @@
 {
   "name": "types-doodler",
-  "version": "0.0.5-alpha",
+  "version": "0.0.5-rc-alpha",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
