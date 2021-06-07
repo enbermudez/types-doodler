@@ -3,26 +3,26 @@ import validator from '../validator';
 import charmap from './charmap';
 
 const schema = Joi.object({
-  str1: Joi.string().min(1).required(),
-  str2: Joi.string().min(1).required(),
+  string1: Joi.string().min(1).required(),
+  string2: Joi.string().min(1).required(),
   insensitive: Joi.boolean().default(false)
 });
 
 export default (fields) => {
-  const { str1, str2, insensitive } = validator(schema, { ...fields });
+  const { string1, string2, insensitive } = validator(schema, { ...fields });
 
-  let string1 = str1;
-  let string2 = str2;
+  let str1 = string1;
+  let str2 = string2;
 
   if (insensitive) {
-    string1 = str1.toLowerCase();
-    string2 = str2.toLowerCase();
+    str1 = string1.toLowerCase();
+    str2 = string2.toLowerCase();
   }
 
-  if (string1.length !== string2.length) return false;
+  if (str1.length !== str2.length) return false;
 
-  const string1Map = charmap({ str: string1});
-  const string2Map = charmap({ str: string2 });
+  const string1Map = charmap({ string: str1});
+  const string2Map = charmap({ string: str2 });
 
   for (const char in string1Map) {
     if (string1Map[char] !== string2Map[char]) {

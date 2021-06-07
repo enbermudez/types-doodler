@@ -2,21 +2,21 @@ import Joi from 'joi';
 import validator from '../validator';
 
 const schema = Joi.object({
-  str: Joi.string().min(1).required(),
+  string: Joi.string().min(1).required(),
   insensitive: Joi.boolean().default(false)
 });
 
 export default (fields) => {
-  const { str, insensitive } = validator(schema, { ...fields });
+  const { string, insensitive } = validator(schema, { ...fields });
 
-  let string = str;
+  let str = string;
 
-  if (insensitive) string = str.toLowerCase();
+  if (insensitive) str = string.toLowerCase();
 
   const map = {};
 
-  for (let i = 0; i < string.length; i++) {
-    const character = string.charAt(i);
+  for (let i = 0; i < str.length; i++) {
+    const character = str.charAt(i);
     if (map[character]) map[character]++;
     else map[character] = 1;
   }
