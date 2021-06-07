@@ -11,7 +11,7 @@ Check if a string is an anagram of another string.
 ```js
 const td = require('types-doodler');
 
-const options = { str: 'abbccc' };
+const options = { string: 'abbccc' };
 
 const anagram = td.strings.anagram({ str1: 'listen', str2: 'silent' });
 
@@ -33,7 +33,7 @@ Returns a charmap (object) of the provided string.
 ```js
 const td = require('types-doodler');
 
-const options = { str: 'abbccc' };
+const options = { string: 'abbccc' };
 
 const charmap = td.strings.charmap(options);
 
@@ -42,7 +42,7 @@ console.log(charmap); // { a: 1, b: 2, c: 3 }
 
 | Property      | Description                                               | Type      | Default | Required           |
 | ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
-| `str`         | String to be checked.                                     | `string`  |         | :heavy_check_mark: |
+| `string`      | String to be checked.                                     | `string`  |         | :heavy_check_mark: |
 | `insensitive` | Whether it should worry about casing or not.              | `boolean` | `false` |                    |
 
 ---
@@ -54,7 +54,7 @@ Checks whether the provided string is a palindrome or not.
 ```js
 const td = require('types-doodler');
 
-const options = { str: 'madam' };
+const options = { string: 'madam' };
 
 const palindrome = td.strings.palindrome(options);
 
@@ -63,7 +63,7 @@ console.log(palindrome); // true
 
 | Property      | Description                                               | Type      | Default | Required           |
 | ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
-| `str`         | String to be checked.                                     | `string`  |         | :heavy_check_mark: |
+| `string`      | String to be checked.                                     | `string`  |         | :heavy_check_mark: |
 
 ---
 
@@ -74,7 +74,7 @@ Reverse the provided string as a whole or word by word.
 ```js
 const td = require('types-doodler');
 
-const options = { str: 'This-is-entirely-reversed', whole: true, separator: '-' };
+const options = { string: 'This-is-entirely-reversed', whole: true, separator: '-' };
 
 const reverse = td.strings.reverse(options);
 
@@ -83,7 +83,7 @@ console.log(reverse); // desrever-yleritne-si-sihT
 
 | Property      | Description                                               | Type      | Default | Required           |
 | ------------- | --------------------------------------------------------- | --------- | ------- | :----------------: |
-| `str`         | String to be edited.                                      | `string`  |         | :heavy_check_mark: |
+| `string`      | String to be edited.                                      | `string`  |         | :heavy_check_mark: |
 | `whole`       | Whether the string should be separated as a whole or not. | `boolean` | `false` |                    |
 | `separator`   | Character used as a separator in the string.              | `string`  | ` `     |                    |
 
@@ -96,7 +96,7 @@ Transform the supplied string to weird-casing.
 ```js
 const td = require('types-doodler');
 
-const options = { str: 'this-is-so-weird', separator: '-' };
+const options = { string: 'this-is-so-weird', separator: '-' };
 
 const weird = td.strings.weirdCase(options);
 
@@ -105,5 +105,5 @@ console.log(weird); // ThIs-Is-So-WeIrD
 
 | Property      | Description                                  | Type       | Default | Required           |
 | ------------- | -------------------------------------------- | ---------- | ------- | :----------------: |
-| `str`         | String to be edited.                         | `string`   |         | :heavy_check_mark: |
+| `string`      | String to be edited.                         | `string`   |         | :heavy_check_mark: |
 | `separator`   | Character used as a separator in the string. | `string`   | ` `     |                    |

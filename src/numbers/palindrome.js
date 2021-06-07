@@ -2,16 +2,16 @@ import Joi from 'joi';
 import validator from '../validator';
 
 const schema = Joi.object({
-  num: Joi.number().required()
+  number: Joi.number().required()
 });
 
 export default (fields) => {
-  const { num } =  validator(schema, { ...fields });
+  const { number } =  validator(schema, { ...fields });
 
-  if (num < 0) return false;
+  if (number < 0) return false;
 
   let reversed = 0;
-  let copy = num;
+  let copy = number;
 
   while (copy > 0) {
     const lastDigit = copy % 10;
@@ -19,5 +19,5 @@ export default (fields) => {
     copy = (copy / 10) | 0;
   }
 
-  return num === reversed;
+  return number === reversed;
 };
